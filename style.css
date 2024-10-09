@@ -1,6 +1,12 @@
 :root{
-    --fundo: #191970
-    --cartão-frente: #8A2BE2
-    --cartão-verso: #836FFF
-    --destaque: #9400D3
+    --fundo: #191970;
+    --cartão-frente: #8A2BE2;
+    --cartão-verso: #836FFF;
+    --destaque: #9400D3;
+    --preto: #000000;
+    --branco: #ffffff;
+}
+
+body{
+    background-color: var(--fundo);
 }
