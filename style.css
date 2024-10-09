@@ -14,8 +14,8 @@ body{
 footer{
     position: fixed;
     bottom: 0;
-    background-color: var(--branco);
-    color: var(--cartão-verso);
+    background-color: var(--destaque);
+    color: var(--cartão-frente);
     width: 100%;
     text-align: center;
 }
