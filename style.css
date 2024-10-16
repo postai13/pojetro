@@ -51,6 +51,7 @@ footer{
     padding: 0.6rem;
     border-radius: 0.6rem;
     font-size: 1Vw;
+    backface-visibility: hidden;
 }
 
 .conteudo-cartao p{
@@ -70,4 +71,12 @@ footer{
 
 .cartao:hover .conteudo-cartao{
     transform: rotateY(180deg);
+}
+
+.pergunta-cartao .resposta-cartao{
+    backface-visibility: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
 }
