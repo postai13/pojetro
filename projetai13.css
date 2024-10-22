@@ -46,6 +46,7 @@ footer{
     background-color: var(--cartão-frente);
     box-shadow: 5px 5px 25px var(--preto);
     border: 1px solid var(--branco);
+    border-radius: 10px;
 }
 
 .conteudo-cartao:hover{
