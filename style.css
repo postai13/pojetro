@@ -22,7 +22,7 @@ header{
 }
 
 header a{
-    color: var(--cartão-verso);
+    color: var(--branco);
     text-decoration: none;
 }
 
