@@ -52,7 +52,6 @@ footer{
 
 .conteudo-cartao:hover{
     transform: scale(1.02);
-
 }
 
 .resposta-cartao{
@@ -60,5 +59,4 @@ footer{
     padding: 40px;
     margin-top: 15px;
     display: none;
-    
 }
