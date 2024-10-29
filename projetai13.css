@@ -59,5 +59,6 @@ footer{
     background-color: var(--cartão-verso);
     padding: 40px;
     margin-top: 15px;
+    display: none;
     
 }
