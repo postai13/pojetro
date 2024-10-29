@@ -81,10 +81,10 @@ footer{
 
 .resposta-cartao{
     font-weight: 700;
-    color: var(--cartão-verso);
+    color: var(--destaque);
 }
 
-.cartao:hover .conteudo-cartao{
+.cartao:active .conteudo-cartao{
     transform: rotateY(180deg);
 }
 
