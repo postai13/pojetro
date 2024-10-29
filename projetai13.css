@@ -47,9 +47,11 @@ footer{
     box-shadow: 5px 5px 25px var(--preto);
     border: 1px solid var(--branco);
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .conteudo-cartao:hover{
     transform: scale(1.02);
 
 }
+
