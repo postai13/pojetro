@@ -1,10 +1,10 @@
-:root{
-    --fundo: #191970;
-    --cartão-frente: #8A2BE2;
-    --cartão-verso: #836FFF;
-    --destaque: #9400D3;
-    --preto: #000000;
-    --branco: #ffffff;
+:root {
+    --fundo: #ab59b6;
+    --cartao-frente: #636dd6;
+    --cartao-verso: #2a2885;
+    --destaque: #12608d;
+    --preto: #000;
+    --branco: #fff;
 }
 
 body{
@@ -13,91 +13,49 @@ body{
 }
 
 header{
-    background-color: var(--destaque);
+    background-color: var(--preto);
     color: var(--branco);
     padding: 2rem;
     display: flex;
     justify-content: space-around;
-
 }
 
 header a{
     color: var(--branco);
     text-decoration: none;
 }
-
 footer{
+    width: 100%;
     position: fixed;
     bottom: 0;
-    background-color: var(--destaque);
+    background-color: var(--preto);
     color: var(--branco);
-    width: 100%;
     text-align: center;
 }
 
-    #container{
-        display: flex;
-        padding: 4rem;
-        gap: 3rem;
-        flex-wrap: wrap;
-    }
-    
-    .cartao{
-        flex-grow: 1;
-        flex-basis: calc(33% - 6rem);
-        margin: 1rem;
-        height: 20rem;
-    }
-
-    .conteudo-cartao {
-        background-color: var(--cartão-frente);
-        text-align: center;
-        height: 100%;
-        transform-style: preserve-3d;
-        transition: transform 300ms ease-in-out;
-    }
-
-.conteudo-cartao h3{
-    color: var(--cartão-verso);
-    border: 1px solid var(--destaque);
-    position: absolute;
-    text-align: left;
-    margin: 0.6rem;
-    padding: 0.6rem;
-    border-radius: 0.6rem;
-    font-size: 1Vw;
-    backface-visibility: hidden;
+#container{
+    display: grid;
+    gap: 3rem;
+    padding: 20px;
 }
 
-.conteudo-cartao p{
-    margin-top: 4rem;
-    font-size: 1.4rem;
-    padding: 2rem;
+.conteudo-cartao{
+    padding: 40px;
+    background-color: var(--cartao-frente);
+    box-shadow: 5px 5px 20px 5px var(--preto);
+    border: 1px solid var(--preto);
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-.pergunta-cartao{
-    font-weight: 500;
+.conteudo-cartao:hover{
+    transform: scale(1.02);
 }
 
 .resposta-cartao{
-    font-weight: 700;
-    color: var(--destaque);
-}
-
-.cartao:active .conteudo-cartao{
-    transform: rotateY(180deg);
-}
-
-.pergunta-cartao, .resposta-cartao{
-    backface-visibility: hidden;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.resposta-cartao{
-    transform: rotateY(180deg);
-    background-color: var(--cartão-verso);
-    border: 2px solid var(--destaque);
+    background-color: var(--cartao-verso);
+    color: var(--branco);
+    padding: 40px;
+    margin-top: 15px;
+    display: none;
 }
